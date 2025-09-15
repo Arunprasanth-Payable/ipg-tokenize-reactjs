@@ -392,7 +392,7 @@ Authorization: Bearer {access_token}
 - `amount` - Payment amount
 - `currencyCode` - Currency code
 - `checkValue` - Security hash
-- `webhookUrl` - Webhook URL for notifications
+- `notifyUrl` - Webhook URL for notifications
 
 **CheckValue Generation:**
 

@@ -392,7 +392,12 @@ Authorization: Bearer {access_token}
 - `amount` - Payment amount
 - `currencyCode` - Currency code
 - `checkValue` - Security hash
-- `notifyUrl` - Webhook URL for notifications
+- `webhookUrl` - Webhook URL for notifications
+
+**Optional Parameters**:
+
+- `custom1` - Custom field 1 for merchant-specific data
+- `custom2` - Custom field 2 for merchant-specific data
 
 **CheckValue Generation:**
 

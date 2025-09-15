@@ -605,6 +605,12 @@ export default TokenizePayment;
 
 ### CheckValue Validation
 
+**Formula for Webhook Validation:**
+
+```
+UPPERCASE(SHA512[merchantKey|payableOrderId|payableTransactionId|payableAmount|currencyCode|invoiceNo|statusCode|UPPERCASE(SHA512[merchantToken])])
+```
+
 ```javascript
 // Validate webhook response
 function validateWebhook(webhookData, merchantToken) {

@@ -140,17 +140,6 @@ function getCheckValue(
 }
 ```
 
-**PHP Example:**
-
-```php
-function getCheckValue($merchantKey, $invoiceId, $amount, $currencyCode, $merchantToken) {
-    $mToken = strtoupper(hash('sha512', $merchantToken));
-    $val = $merchantKey . '|' . $invoiceId . '|' . $amount . '|' . $currencyCode . '|' . $mToken;
-    $checkValue = strtoupper(hash('sha512', $val));
-    return $checkValue;
-}
-```
-
 ### For Tokenize Payments (paymentType = 3 )
 
 Format: `UPPERCASE(SHA512[<merchantKey>|<invoiceId>|<amount>|<currencyCode>|<customerRefNo>|UPPERCASE(SHA512[<merchantToken>])])`
@@ -189,17 +178,6 @@ function getCheckValueToken(
   // Step 3: Hash the entire value string
   const checkValue = CryptoJS.SHA512(txt).toString().toUpperCase();
   return checkValue;
-}
-```
-
-**PHP Example:**
-
-```php
-function getCheckValueToken($merchantKey, $invoiceId, $amount, $currencyCode, $customerRefNo, $merchantToken) {
-    $mToken = strtoupper(hash('sha512', $merchantToken));
-    $val = $merchantKey . '|' . $invoiceId . '|' . $amount . '|' . $currencyCode . '|' . $customerRefNo . '|' . $mToken;
-    $checkValue = strtoupper(hash('sha512', $val));
-    return $checkValue;
 }
 ```
 
@@ -392,7 +370,7 @@ Authorization: Bearer {access_token}
 - `amount` - Payment amount
 - `currencyCode` - Currency code
 - `checkValue` - Security hash
-- `webhookUrl` - Webhook URL for notifications
+- `webhookUrl` - Webhook URL for notifications (https://yoursite.com/webhook/payment)
 
 **Optional Parameters**:
 

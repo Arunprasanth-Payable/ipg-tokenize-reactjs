@@ -470,7 +470,7 @@ Payable Payment Gateway will send back to your website notifies the payment stat
   "custom1": null,
   "custom2": null,
   "checkValue": "YOUR_CHECK_VALUE",
-  "customerRefNo": "YOUR_CUSTOMER_REF_NO",
+  "customerRefNo": "YOUR CUSTOMER REF NO",
   "token": {
     "tokenId": "YOUR_TOKEN_ID",
     "maskedCardNo": "512345xxxxxx0008",
@@ -571,7 +571,7 @@ const TokenizePayment = () => {
       currencyCode: "LKR",
       paymentType: "1", // One-time payment
       isSaveCard: "1", // Save card for future use
-      customerRefNo: "CUST_123456789",
+      customerRefNo: "CUST123456789",
       doFirstPayment: "1", // Charge immediately
     };
 

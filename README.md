@@ -208,7 +208,7 @@ const payment = {
   currencyCode: "LKR",
   paymentType: "1",
   isSaveCard: "1", // Save card for future use
-  customerRefNo: "CUST_123456789", // Customer reference for tokenization
+  customerRefNo: "CUST123456789", // Customer reference for tokenization
   doFirstPayment: "1", // Charge immediately
 };
 ```

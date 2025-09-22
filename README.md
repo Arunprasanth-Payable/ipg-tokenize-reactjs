@@ -324,9 +324,9 @@ Authorization: Bearer {access_token}
 
 **Required Parameters**:
 
-- `merchantId` - Your merchant ID
-- `customerId` - Customer ID
-- `tokenId` - Token ID to edit
+- `merchantId` - Get it from 1st callback
+- `customerId` - Get it from 1st callback
+- `tokenId` - Get it from list card API
 - `nickName` - Optional nickname for the card
 - `isDefaultCard` - Set as default card (0 or 1)
 - `checkValue` - Security hash
@@ -363,9 +363,9 @@ Authorization: Bearer {access_token}
 
 **Required Parameters**:
 
-- `merchantId` - Your merchant ID
-- `customerId` - Customer ID
-- `tokenId` - Token ID to use for payment
+- `merchantId` - Get it from 1st callback
+- `customerId` - Get it from 1st callback
+- `tokenId` - Get it from list card API
 - `invoiceId` - Invoice ID
 - `amount` - Payment amount
 - `currencyCode` - Currency code

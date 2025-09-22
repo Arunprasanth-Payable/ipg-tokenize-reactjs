@@ -206,7 +206,7 @@ const payment = {
   billingAddressPostcodeZip: "10000",
   amount: "100.00",
   currencyCode: "LKR",
-  paymentType: "1",
+  paymentType: "3",
   isSaveCard: "1", // Save card for future use
   customerRefNo: "CUST123456789", // Customer reference for tokenization
   doFirstPayment: "1", // Charge immediately
